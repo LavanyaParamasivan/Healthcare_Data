@@ -22,7 +22,7 @@ const users = {
     password: "super-secret",
   },
 };
-let cart = [];
+
 
 // use this to add a 1 second delay to all requests
 // app.use(function (req, res, next) {
@@ -30,88 +30,7 @@ let cart = [];
 // });
 
 app.get("/api/healthDetails", (req, res) => {
-  let healthDetailss=[{
-        id:905,
-        name:"Blacktown Hospital",
-        description:"Cancer Screening",
-        category:"Healthy living",
-        cost:35.0,
-        imagename:"cancer.png",
-        discount:0.2,
-      },
-      {
-        id:905,
-        name:"Braidwood Multi Purpose Service",
-        description:"Eye Test",
-        category:"Healthy living",
-        cost:25.0,
-        imagename:"eye.png",
-        discount:0.2,
-      },
-      {
-        id:905,
-        name:"Campbell Town Hospital",
-        description:"Cancer Screening",
-        category:"Healthy living",
-        cost:35.0,
-        imagename:"cancer.png",
-        discount:0.2,
-      },
-      {
-        id:905,
-        name:"Liver Pool Hospital",
-        description:"Body Check Up",
-        category:"Healthy living",
-        cost:45.0,
-        imagename:"healthcheck.png",
-        discount:0,
-      },
-      {
-        id:905,
-        name:"Orange Health Service",
-        description:"Cancer Screening",
-        category:"Healthy living",
-        cost:35.0,
-        imagename:"cancer.png",
-        discount:0.2,
-      },
-      {
-        id:905,
-        name:"Springwood Private Hospital",
-        description:"Hearing Health Test",
-        category:"Healthy living",
-        cost:25.0,
-        imagename:"ear.png",
-        discount:0,
-      },
-      {
-        id:905,
-        name:"Wentworth Center Hospital",
-        description:"ECG screen Test",
-        category:"Healthy living",
-        cost:30.0,
-        imagename:"ecg.png",
-        discount:0,
-      },
-      {
-        id:905,
-        name:"Epping Center Private Hospital",
-        description:"Hearing Health Test",
-        category:"Healthy living",
-        cost:25.0,
-        imagename:"ear.png",
-        discount:0,
-      },
-      {
-        id:905,
-        name:"Mosman Broad Hospital",
-        description:"Body Check Up",
-        category:"Healthy living",
-        cost:45.0,
-        imagename:"healthcheck.png",
-        discount:0,
-      },
-    ];
+
   res.send(healthDetailss);
 });
 
